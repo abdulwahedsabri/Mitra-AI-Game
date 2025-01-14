@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitra.ai</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .description {
+        font-size: 1.5rem;
+        margin: 20px auto;
+        max-width: 600px;
+        line-height: 1.6;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 15px;
+        backdrop-filter: blur(8px);
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ff6a75;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      button:active {
+        transform: translateY(2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Me 🫠</h1>
+      <div class="description">
+        <p>
+          <b><mark>I'm Mitra Ai Bot 👦.</mark></b>
+          Your are going to Enter a New Game which are having 5 Levels 😊. This
+          Game is like <del>"Truth"</del> & <del>"Dare"</del> but it is
+          completly Diffrent🤯. know all the thing about yourself 🫵.
+          <ins>Because the Developer is Design me as you think.</ins>
+          <strong>And Ofcourse I'm AI 😀.</strong>
+        </p>
+      </div>
+      <button id="dontClick">Don't Click Me!</button>
+    </div>
+    <script>
+      const button = document.getElementById("dontClick");
+
+      button.addEventListener("click", () => {
+        window.location.href = "https://abdulwahedsabri.github.io/Portfolio/"; // Replace with the URL of the next page
+      });
+    </script>
+  </body>
+</html>
